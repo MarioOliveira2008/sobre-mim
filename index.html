@@ -2,88 +2,150 @@
 <html lang="pt-br">
     <head>
         <!-- Meta informações sobre a pagina -->
-         <meta charset="utf-8">
-         <meta name="viewport" content="width=device-width, initital-scale=1.0"> 
-         <title>Sobre mim</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sobre mim</title>
+
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="reset.css">
+
+        <!-- CSS externo (arquivo style) -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- CSS interno (tag style) -->
+        <style>
+            /* body{
+                background-color: #00ff00 ;
+                } */
+        </style>
     </head>
-     <!-- HTML NÃO TEM PESCOÇO! -->
     <body>
-        <header>
-            <ul>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Formação academica</a></li>
-                <li><a href="#">Hard skills</a></li>
-                <li><a href="#">Soft skills</a></li>
-                <li><a href="#">Meus projetos</a></li>
-                <li><a href="#">Meus artigos</a></li>
-                <li><a href="#">Ultima seção</a></li>
-                
-            </ul>
-        </header>
-        <section>
-        <h1>Sobre mim</h1>
-       <p>Sou um aluno de DSI do Senai Ipiranga São Paulo.</p>
-       <img src="mario.jpg" alt="Foto de um homen pardo acenando para a foto." width="300"
-        title="Foto de um homen pardo acenando para a foto.">
-       <p>
-    </p>
-    <ul>
-        <p>
-           <li><a href= "https://github.com/MarioOliveira2008" title="Clique para acessar meu git hub"
-            target="_blank">Entre no meu github</a></li>
-           <li><a href= "https://www.linkedin.com" title="Clique para acessar meu linkedin"
-            target="_blank">Entre em meu linkedin</a></li>
-        </p>
-       </ul>
-       </section>
-       <section>
-       <h2>Formação academica</h2>
-       <p> Estou cursando o segundo ano do ensino medio,
-        e o curso técnico de Desenvolvimento de Sistemas no SENAI São Paulo.
-       </p>
-       </section>
-
-       <section>
-        <h2>Hard skills</h2>
-       <ul>
-        <li>
-          <h3>Logica de Programação</h3> 
-          <h3>Java script</h3>
-        </li>
-       </ul>
-       </section>
-
-       <section>
-        <h2>Soft skills</h2>
-        <ul>
-           
-            <li>Responsavel.</li>
-            <li>Organizado.</li>
-            <li>Trablha bem em equipe</li>
-           </li>
+        <header> 
             
-        </ul>
-       </section>
-
-       <section>
-        <h2>Meus projetos</h2>
-        <a href= "https://github.com/MarioOliveira2008" title="Clique para conhecer meus projetos"
-            target="_blank">Conheça meus projetos</a></li>
+            <nav>
+                <h1>
+                    PORTFÓLIO
+                </h1>
+                <ul>
+                    <li><a href="#sobreMim">Sobre mim</a></li>
+                    <li><a href="#formaçãoAcademica">Formação</a></li>
+                    <li><a href="#hardSkills">Hard skills</a></li>
+                    <li><a href="#softSkills">Soft skills</a></li>
+                    <li><a href="#meusProjetos">Projetos</a></li>
+                    <li><a href="#meusArtigos">Artigos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
         
-       </section>
-       <section>
-        <h2>Meus artigos</h2>
-        <p>Ainda não possuo artigos, mas quem sabe em breve...</p>
-       </section>
-       <footer>
-        <p>Links uteis </p>
-        <p>
-            <li><a href= "https://github.com/MarioOliveira2008" title="Clique para acessar meu git hub"
-             target="_blank">Entre no meu github</a></li>
-            <li><a href= "https://www.linkedin.com" title="Clique para acessar meu linkedin"
-             target="_blank">Entre em meu linkedin</a></li>
-         </p>
-        <p>Copyright</p>
-       </footer>
+        <section id="sobreMim">
+            <h1>Sobre mim</h1>
+            <p>Sou aluno de tecnologia da informação no SENAI São paulo.</p>
+            <img src="mario.jpg" alt="Foto de um homem branco com bigode e cavanhaque." width="200" title="Foto de um homem moreno com cabelos castanhos."> 
+            <ul>
+            <li>
+                <a href="https://github.com/mariooliveira2008" title="Clique para acessar meu portfólio no GitHub" target="_blank">Acesse o meu Github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com" title="Clique para acessar meu perfil no linkedIn"target="_blank">Acesse o meu LinkedIn</a>
+            </li>
+            </ul>
+            
+        </section>
+
+        <section id="formaçãoAcademica"> 
+            <h2>Formação acadêmica</h2>
+            <p>Estou em processo de formação no SESI/SENAI, Atualmente cursando Desenvolvimento de sistemas no SENAI (Ipiranga) e completando o 2° do ensino medio no SESI-414(Vila Leopoldina) </p>
+        </section>
+
+        <section id="hardSkills">
+            <h2>Hard skills</h2>
+            <ul>
+            <li>
+                Lógica de programação
+            </li>
+            <li>
+                html
+            </li>
+            <li>
+                JavaScript
+            </li>
+            <li>
+                linguagem de marcação
+            </li>
+            </ul>
+
+        </section>
+
+        <section id="softSkills">
+            <h2>Soft skills</h2>
+            <ul>
+            <li>
+                Facilidade em aprendizado
+            </li>
+            <li>
+                Educado
+            </li>
+            <li>
+                Organizado
+            </li>
+            <li>
+                disciplinado
+            </li>
+            <li>
+                responsável
+            </li>
+            <li>
+                trabalho bem em equipe.
+            </li>
+            </ul>
+
+        </section>
+
+        <section id="meusProjetos">
+            <h2>Meus projetos</h2>
+            <p> Ao longo do meu curso no SENAI, desenvolvi um jogo que se passa no espaço. 
+            <ul>
+                <li>
+                <a href="mariooliveira2008.github.io/lopal-moonla target="_blank"> Acesse o link para se divertir</a>.
+                </li>
+           </ul>
+            </p>
+            <p>O jogo consiste em pousar o foguete em segurança sendo assim uma velocidade horizontal e vertical menor ou igual a 5, caso não consiga, tente novamente!!!</p>
+
+            <h3>**AVISO**</h3>
+            JOGUE COM AS SETAS DO SEU COMPUTADOR
+
+        </section>
+
+        <section id="meusArtigos">
+            <h2>Meus artigos</h2>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em contato comigo</h2>
+            <form>
+                <input type="text" name="nome">
+                <input type="email" name="email">
+                <textarea name="mensagem" rows="5" cols="50"></textarea>
+                <input type="submit" name="botaoEnviar" value="solicitar contato">
+            
+            </form>
+        </section>
+
+        <footer id="rodape">
+            <p>Links úteis</p>
+
+            <a href="https://sp.senai.br/unidade/automobilistica/" target="_blank">Descubra sobre meu SENAI</a>
+            <p>
+            <a href="https://github.com/Prof-Edgard" target="_blank">Portfólio do meu professor</a>
+            </p>
+            <p>
+                <a href="https://github.com/JoaoRoccella" target="_blank">Portfólio do meu professor</a>
+                </p>
+                
+            <p>desenvolvido por mario</p>
+        </footer>
+        
     </body>
-</html>
+</html> 
