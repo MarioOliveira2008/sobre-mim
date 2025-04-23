@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark" data-theme="alto">
     <head>
         <!-- Meta informações sobre a pagina -->
         <meta charset="utf-8">
@@ -8,7 +8,7 @@
 
         <!-- CSS Reset -->
         <link rel="stylesheet" href="reset.css">
-
+ 
         <!-- CSS externo (arquivo style) -->
         <link rel="stylesheet" href="style.css">
 
@@ -23,9 +23,12 @@
         <header> 
             
             <nav>
-                <h1>
-                    PORTFÓLIO
-                </h1>
+                <nav>
+                    <h1>
+                        PORTFÓLIO
+                    </h1>
+                </nav>
+
                 <ul>
                     <li><a href="#sobreMim">Sobre mim</a></li>
                     <li><a href="#formaçãoAcademica">Formação</a></li>
@@ -34,17 +37,24 @@
                     <li><a href="#meusProjetos">Projetos</a></li>
                     <li><a href="#meusArtigos">Artigos</a></li>
                     <li><a href="#contato">Contato</a></li>
+                    <li><span id="botao-tema">😎</span></li>
+                    <li><span id="botao-alto">👀</span></li>
                 </ul>
             </nav>
         </header>
         
         <section id="sobreMim">
             <h1>Sobre mim</h1>
-            <p>Sou aluno de tecnologia da informação no SENAI São paulo.</p>
-            <img src="mario.jpg" alt="Foto de um homem branco com bigode e cavanhaque." width="200" title="Foto de um homem moreno com cabelos castanhos."> 
+            <img src="mario.jpg" alt="Foto de um homem pardo com cabelos castanhos." width="200" title="Foto de um homem pardo de cabelos castanhos."> 
+            <p>Me chamo Mario Oliveira de Jesus e atualmente sou estudante de tecnologia da informação no
+                 SENAI São paulo e aluno da instituicao SESI Vila Leopoldina-CE-414, tenho 16 anos e busco me formar em tecnologia da informação(TI), arrumar um bom trabalho na area , criar uma  familia e ter uma vida feliz.
+                  Em primeira análise sou um menino que gosta de esportes , atualmente jogo polo aquatico
+                  a 6 anos , acabei começando no esporte em 2018 e nunca mais parei.Atualmente jogo no Sesi 
+                  vila leopoldina e dispiuto campeonatos da federação 
+                .</p>
             <ul>
             <li>
-                <a href="https://github.com/mariooliveira2008" title="Clique para acessar meu portfólio no GitHub" target="_blank">Acesse o meu Github</a>
+                <a href="https://github.com/MarioOliveira2008" title="Clique para acessar meu portfólio no GitHub" target="_blank">Acesse o meu Github</a>
             </li>
             <li>
                 <a href="https://www.linkedin.com" title="Clique para acessar meu perfil no linkedIn"target="_blank">Acesse o meu LinkedIn</a>
@@ -54,98 +64,236 @@
         </section>
 
         <section id="formaçãoAcademica"> 
-            <h2>Formação acadêmica</h2>
+
+            <h2 class="titulo-secao">Formação acadêmica</h2>
+            
             <p>Estou em processo de formação no SESI/SENAI, Atualmente cursando Desenvolvimento de sistemas no SENAI (Ipiranga) e completando o 2° do ensino medio no SESI-414(Vila Leopoldina) </p>
-        </section>
+
+            <div class="cards-em-coluna">
+
+                <ul class="card">
+                    <li class="titulo-card">tecnico em desenvolvimentos de sistemas</li>
+                    <li class="ano-card">2026</li>
+                    <li class="instituição-card">SENAI "Conde josé vicente de azevedo"</li>
+                </ul>
+                <ul class="card">
+                    <li class="titulo-card">Completando ensino medio</li>
+                    <li class="ano-card">2026(previsto)</li>
+                    <li class="instituição-card">SESI-414 Vila Leopoldina</li>
+                </ul>
+            </div>
+
+            <!-- ul.card>li.titulo-card+li.instituicao-card+li.ano-card -->
+            </section>
 
         <section id="hardSkills">
-            <h2>Hard skills</h2>
-            <ul>
-            <li>
-                Lógica de programação
-            </li>
-            <li>
-                html
-            </li>
-            <li>
-                JavaScript
-            </li>
-            <li>
-                linguagem de marcação
-            </li>
-            </ul>
+            <h2 class="titulo-secao">Hard skills </h2>
+            <div class="cards-em-linha">
+
+                
+                <ul class="card">
+                    <li class="titulo-card"> Lógica de programação</li>
+                    <li class="icone-card">🧠</li>
+                    <li class="descricao-card">materia extremamente interessante </li>
+                </ul>
+                <ul class="card">
+                    <li class="titulo-card">HTMl</li>
+                    <li class="icone-card">>/></li>
+                    <li class="descricao-card">Materia interessante </li>
+                </ul>
+                <ul class="card">
+                    <li class="titulo-card">JavaScript</li>
+                    <li class="icone-card">☕</li>
+                    <li class="descricao-card">materia interessante </li>
+                </ul>
+                <ul class="card">
+                    <li class="titulo-card">linguagem de marcação </li>
+                        <li class="icone-card">.,!</li>
+                        <li class="descricao-card">materia interessante </li>
+                    </ul>
+                    
+                </div>
 
         </section>
 
         <section id="softSkills">
-            <h2>Soft skills</h2>
-            <ul>
-            <li>
-                Facilidade em aprendizado
-            </li>
-            <li>
-                Educado
-            </li>
-            <li>
-                Organizado
-            </li>
-            <li>
-                disciplinado
-            </li>
-            <li>
-                responsável
-            </li>
-            <li>
-                trabalho bem em equipe.
-            </li>
-            </ul>
+            <h2 class="titulo-secao">Soft skills</h2>
+            <div class="cards-em-linha">
 
+                
+                <ul class="card">
+                    <li class="titulo-card">Facilidade em aprendizado</li>
+                    <li class="icone-card">🧠</li>
+                </ul>
+                <ul class="card">
+                    <li class="titulo-card">Educado</li>
+                    <li class="icone-card">👥</li>
+                </ul>
+                <ul class="card">
+                    <li class="titulo-card">Organizado</li>
+                    <li class="icone-card">📘</li>
+                </ul>
+                <ul class="card">
+                    <li class="titulo-card">Disciplinado</li>
+                        <li class="icone-card">🗣️</li>
+                    </ul>
+                    <ul class="card">
+                        <li class="titulo-card">responsável</li>
+                            <li class="icone-card">🧑‍🎓</li>
+                        </ul>
+                        <ul class="card">
+                            <li class="titulo-card">Trabalho em equipe</li>
+                                <li class="icone-card">🧑‍💻</li>
+                            </ul>
+                </div>
         </section>
 
         <section id="meusProjetos">
-            <h2>Meus projetos</h2>
-            <p> Ao longo do meu curso no SENAI, desenvolvi um jogo que se passa no espaço. 
-            <ul>
-                <li>
-                <a href="mariooliveira2008.github.io/lopal-moonla target="_blank"> Acesse o link para se divertir</a>.
-                </li>
-           </ul>
-            </p>
-            <p>O jogo consiste em pousar o foguete em segurança sendo assim uma velocidade horizontal e vertical menor ou igual a 5, caso não consiga, tente novamente!!!</p>
+            <h2 class="titulo-secao">Meus projetos</h2> 
+            <div class="cards-em-linha">
+                <ul class="cards-em-linha">
+                    <ul class="card">
+                        <li class="card-imagem">
+                            <img src="screen_moonlander.png" alt="Jogo Monn Lander">
+                        </li>
+                        <li class="card-titulo">Moon Lander</li>
+                        <li class="card-descricao">Um jogo de simulação de pouso lunar</li>
+                        <li class="card-cta"></li>
+                    </ul>
 
-            <h3>**AVISO**</h3>
-            JOGUE COM AS SETAS DO SEU COMPUTADOR
+                </ul>
+            </div>
+            <!-- <p>Ao desenrolar do meu curso de desenvolvimento de sistemas, programei e criei um jogo sobre um foguete, o jogo consiste em pousar o foguete em uma velocidade menor ou igual a 5.</p>
 
+            <div class="cards-em-coluna">
+
+                <ul class="card">
+                   LOPAL-MOONLANDER, O GAME
+                   <ul>
+                    <li>
+                    <a href="https://MarioOliveira2008.github.io/lopal-moonlander/" target="_blank"> Acesse o link para se divertir</a>.
+                    </li>
+
+               </ul>
+    
+                </ul>
+                <ul class="card">
+                    <h3>**AVISO**</h3>
+                    <h3>ESTE JOGO É PARA SER JOGADO COM EXTREMA DIVERSÃO</h3>
+                   </ul>
+
+            </div> -->
+
+
+            </div>
         </section>
 
         <section id="meusArtigos">
-            <h2>Meus artigos</h2>
+
+        <h2 class="titulo-secao">Meus artigos</h2>
+        
+        <div class="artigos cards-em-linha">
+            <article class="card">
+                <header>
+                    <h3 class="card-titulo">Potfólio profissional usando GitHub Pages</h3> 
+                    <span class="data-publicacao">15 abr 2025</span>
+                    <span class="autor">Mario Oliveira</span>
+                </header>
+
+                <p>Crie e publique seu portfólio profissional usando GitHub Pages, uma maneiora facil e gratuita de mostrar seus projetos e habilidades.</p>
+                
+                <footer>
+                    <button type="button" class="botao botao-continue">Continue lendo</button>
+                    <button style="padding: 10px, 20px;"></button>
+                <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                </footer>
+            </article>
+            <article class="card">
+                <header>
+                    <h3 class="card-titulo">Iniciação de Logica de programação com git hub</h3> 
+                    <span class="data-publicacao">15 abr 2025</span>
+                    <span class="autor">Mario Oliveira</span>
+                </header>
+
+                <p>Iniciação de comandos de git hub para iniciantes de logica de programação.</p>
+                
+                <footer>
+                    <button type="button" class="botao botao-continue">Continue lendo</button>
+                    <button style="padding: 10px, 20px;"></button>
+                <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                </footer>
+            </article>
+            <article class="card">
+                <header>
+                    <h3 class="card-titulo">Meu git GitHub</h3> 
+                    <span class="data-publicacao">15 abr 2025</span>
+                    <span class="autor">Mario Oliveira de Jesus</span>
+                </header>
+
+                <p>Meus projetos no Git GitHub.</p>
+                
+                <footer>
+                    <button type="button" class="botao botao-continue">Continue lendo</button>
+                    <button style="padding: 10px, 20px;"></button>
+                <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                </footer>
+            </article>
+        </div>
+
         </section>
 
         <section id="contato">
-            <h2>Entre em contato comigo</h2>
+            <h1>Entre em contato comigo</h1>
             <form>
-                <input type="text" name="nome">
-                <input type="email" name="email">
-                <textarea name="mensagem" rows="5" cols="50"></textarea>
+                <input type="text" placeholder="Digite seu nome">
+                <input type="email" placeholder="email@exemplo.com">
+                <input type="tel" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"  placeholder="digite seu telefone (99) 99999-9999">
+                <textarea placeholder="digite sua mensagem" rows="5" cols="50"></textarea>
                 <input type="submit" name="botaoEnviar" value="solicitar contato">
             
             </form>
         </section>
 
         <footer id="rodape">
-            <p>Links úteis</p>
 
-            <a href="https://sp.senai.br/unidade/automobilistica/" target="_blank">Descubra sobre meu SENAI</a>
+            <h2>links uteis</h2>
+
+
+             <a href="https://sp.senai.br/unidade/automobilistica/" target="_blank">Meu SENAI</a>
+            
             <p>
-            <a href="https://github.com/Prof-Edgard" target="_blank">Portfólio do meu professor</a>
-            </p>
-            <p>
-                <a href="https://github.com/JoaoRoccella" target="_blank">Portfólio do meu professor</a>
-                </p>
+                <a href="https://github.com/JoaoRoccella" target="_blank">Professor João</a>
+                </p> 
+            
+            <a href="ithub.com/Prof-Edgard" target="_blank">Professor Edgard</a>
                 
-            <p>desenvolvido por mario</p>
+            <p>desenvolvido por Mario</p>
         </footer>
-        
+        <script>
+            document.querySelector("#botao-tema").addEventListener("click", trocaTema)
+
+            function trocaTema(){
+                const root = document.documentElement;
+
+                if (root.getAttribute("data-theme") === "dark"){
+                    root.removeAttribute("data-theme");
+                }else{
+                    root.setAttribute("data-theme", "dark");
+                }
+            }
+
+            document.querySelector("#botao-alto").addEventListener("click", trocaTemaAlto)
+
+            function trocaTemaAlto(){
+                const root = document.documentElement;
+
+                if (root.getAttribute("data-theme") === "alto"){
+                    root.removeAttribute("data-theme");
+                }else{
+                    root.setAttribute("data-theme", "alto");
+                }
+            }
+
+        </script>
     </body>
 </html> 
